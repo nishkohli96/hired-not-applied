@@ -30,6 +30,8 @@ If no location can be written to (the Claude app with no file access), show the 
 
 **The folder is the company name and nothing else**: `applications/Innovaccer/`, `applications/FNP/`, `applications/Reel_Security/`. Write it the way the company writes its own name, keep its capitalisation, drop legal suffixes (Inc, Ltd, Pvt, LLC), and join multiple words with underscores. Never put the role in the folder name. If a folder for that company already exists, use it, and never make a near-duplicate (`Innovaccer` and `innovaccer-sde3`).
 
+**No company name?** Anonymous or confidential postings, and recruiter listings that hide the employer, have no company to name. Never guess or invent one. Use `applications/Unnamed_<source>/`, where `<source>` is the recruiter, agency or job board if the posting shows one (`Unnamed_Michael_Page`, `Unnamed_LinkedIn`), otherwise `applications/Unnamed/`. Tell the user the folder is a placeholder and offer to move the files once the employer is known.
+
 **Role goes in the file name**, because one company can have several roles and each needs its own files side by side: `decode-jd-sde3-fullstack.md`, `cold-email-sde3-fullstack.md`. Use a short lowercase hyphenated slug of the title as written in the JD, and reuse the same slug for every skill on that role.
 
 **Cold emails to a named person add the contact:** `cold-email-<role>-<contact>.txt`, with the contact's name as a lowercase hyphenated slug (`cold-email-sde3-fullstack-priya-sharma.txt`). Emailing a hiring manager and a team lead for the same role gives two files, so neither overwrites the other. With no named person (a generic careers@ address, or a draft for a company only), use `cold-email-<role>.txt`.

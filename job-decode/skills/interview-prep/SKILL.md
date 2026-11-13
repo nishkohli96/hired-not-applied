@@ -41,7 +41,7 @@ Prep kit in chat for one-off use. If the user wants to keep or print it, offer t
 
 ## Save it
 
-Write the result to `applications/<Company>/interview-prep-<role>.md` under the output root, following `../../references/output-files.md`: the prep kit; append a mock-interview scorecard to the same file. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/interview-prep-<role>.md` under the output root, following `../../references/output-files.md`: the prep kit. Only if a mock interview was actually run, with at least one answer from the user, append its scorecard to the same file; with no mock, write no scorecard section. Then show it in chat as usual and end with one line giving the path.
 
 ## Rules
 

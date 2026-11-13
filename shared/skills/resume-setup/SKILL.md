@@ -14,7 +14,7 @@ Create or update the one resume file all skills in this plugin collection use. S
 - Already have a `resume.md` (any location in `resume-source.md`)? Read it; this is an **update**. Go to step 3 with the user's changes.
 - Otherwise ask the user to paste their resume or attach it (PDF, DOCX, TXT, MD, or a LinkedIn PDF export). One message, no other questions yet.
 - For a PDF/DOCX, extract the text (use the pdf/docx skills or tools available). Keep wording exactly; fix only broken line wraps and extraction noise.
-- **Extract formatting, not just text.** Plain text extraction drops bold and links, so also read them: hyperlink annotations in a PDF (e.g. PyMuPDF `page.get_links()` matched to the words they cover) and bold runs/hyperlink relationships in a DOCX. If the source is Markdown or HTML, they are already there. If the extractor cannot recover them, say so and ask the user to paste the links.
+- **Extract formatting, not just text.** Plain text extraction drops bold and links, so also read them: hyperlink annotations in a PDF (e.g. PyMuPDF `page.get_links()` matched to the words they cover) and bold runs/hyperlink relationships in a DOCX. If the source is Markdown or HTML, they are already there. If the extractor cannot recover bold or links, say so and ask the user to paste the resume text from the original (copying from Word or a browser keeps bold and links) or to list the links and the metrics they bold. If they can't, save without the missing formatting and tell them exactly which bold and links are not preserved; never guess which numbers were bold.
 
 ## 2. Convert to the standard format
 
@@ -47,6 +47,6 @@ Reply with: where it's saved, a 3-line summary (headline, years, top 3 proof poi
 ## Rules
 
 - Never invent or round numbers, titles, dates, employers or certifications.
-- Never strip bold or hyperlinks from the user's resume. Before saving, compare the count of bold spans and links against the source and fix any shortfall.
+- Never strip bold or hyperlinks from the user's resume. Before saving, compare the count of bold spans and links against the source and fix any shortfall. When the source's bold or links could not be extracted, there is nothing to compare: skip the count and report the gap instead.
 - Don't store ID numbers, salary history, health, family or other sensitive personal details unless the user explicitly asks.
 - Keep the body under ~1,500 words; long resumes are fine, but skills read this file often.

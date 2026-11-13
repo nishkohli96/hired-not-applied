@@ -49,7 +49,7 @@ End with one line pointing to the next skill that fits: `fit-check` (score the m
 
 ## Save it
 
-Write the result to `applications/<Company>/decode-jd-<role>.md` under the output root, following `../../references/output-files.md`: the whole decode, including the JD text or its link. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/decode-jd-<role>.md` under the output root, following `../../references/output-files.md`: the whole decode, including the JD text or its link. `<Company>` is the employer named in the JD or by the user. If neither names it, do not guess: use the `Unnamed_<source>` folder from "No company name?" in that file and say the folder is a placeholder. Then show it in chat as usual and end with one line giving the path.
 
 ## Rules
 
