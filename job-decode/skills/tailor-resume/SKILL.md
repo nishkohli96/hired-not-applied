@@ -28,6 +28,7 @@ Produce a targeted version of the user's real resume for one job.
 ## Document layout
 
 - **Contact line** directly under the name, in this order, separated by ` | `: email, phone, LinkedIn, GitHub, city. Skip any the resume does not have. The words "LinkedIn" and "GitHub" are hyperlinks to the user's profile URLs; do not print the raw URLs. Region rules (see `references/regional-formats.md`) can add items, such as notice period or visa status, on a separate line.
+- **Carry over the resume's links and bold.** Every hyperlink in `resume.md` (profiles, projects, packages, certifications) stays a live link in the output, and the user's own bold on metrics stays unless it is not relevant to this role. Never output a link as plain text.
 - **Bold** only the key metrics that matter for this role, in the summary and in experience bullets: the headline outcomes (for example `30%` lift in conversion, `200–500ms` faster responses), not every number. Dates, counts of screens or titles, and minor figures stay plain. Aim for roughly one bolded metric per role.
 - **Education**: a degree line with the dates right-aligned, and the field, institution and place on the next line:
   ```

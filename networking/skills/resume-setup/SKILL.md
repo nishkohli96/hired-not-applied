@@ -14,12 +14,13 @@ Create or update the one resume file all skills in this plugin collection use. S
 - Already have a `resume.md` (any location in `resume-source.md`)? Read it; this is an **update**. Go to step 3 with the user's changes.
 - Otherwise ask the user to paste their resume or attach it (PDF, DOCX, TXT, MD, or a LinkedIn PDF export). One message, no other questions yet.
 - For a PDF/DOCX, extract the text (use the pdf/docx skills or tools available). Keep wording exactly; fix only broken line wraps and extraction noise.
+- **Extract formatting, not just text.** Plain text extraction drops bold and links, so also read them: hyperlink annotations in a PDF (e.g. PyMuPDF `page.get_links()` matched to the words they cover) and bold runs/hyperlink relationships in a DOCX. If the source is Markdown or HTML, they are already there. If the extractor cannot recover them, say so and ask the user to paste the links.
 
 ## 2. Convert to the standard format
 
 Follow `references/resume-template.md`:
 - **Frontmatter**: fill `name`, `headline`, `location`, `email`, `links` from the resume. Leave `targets`, `availability`, `work_authorization` empty if the resume doesn't state them.
-- **Body**: keep every role, date, bullet and number as written. Normalize headings to the template's sections. Don't rewrite or embellish bullets here; tailoring happens per job in `tailor-resume`.
+- **Body**: keep every role, date, bullet and number as written, and keep the formatting: bold text stays `**bold**` (the user's bolded metrics included) and every link stays `[text](url)` (LinkedIn, GitHub, projects, packages, certifications). Never flatten a link to plain text or drop a URL. Normalize headings to the template's sections. Don't rewrite or embellish bullets here; tailoring happens per job in `tailor-resume`.
 - **Proof bank**: extract every fact with a number, team size, recognisable brand/client, scale or ownership, as short rows (types: Leadership, Impact, Scale / brand, Ownership, Craft). Only numbers that appear in the resume.
 
 Then ask, in **one** message, only for what's missing and useful across skills:
@@ -46,5 +47,6 @@ Reply with: where it's saved, a 3-line summary (headline, years, top 3 proof poi
 ## Rules
 
 - Never invent or round numbers, titles, dates, employers or certifications.
+- Never strip bold or hyperlinks from the user's resume. Before saving, compare the count of bold spans and links against the source and fix any shortfall.
 - Don't store ID numbers, salary history, health, family or other sensitive personal details unless the user explicitly asks.
 - Keep the body under ~1,500 words; long resumes are fine, but skills read this file often.
