@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120" viewBox="0 0 640 120" role="img" aria-label="hired, not applied">
-  <title>hired, not applied</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120" viewBox="0 0 640 120" role="img" aria-label="Hired, not applied">
+  <title>Hired, not applied</title>
   <defs>
     <linearGradient id="hnaBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#4F46E5"/>
@@ -26,7 +26,7 @@
     </g>
   </g>
   <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
-    <text x="130" y="82" font-size="62" font-weight="800" fill="#64748B" textLength="262" lengthAdjust="spacingAndGlyphs"><tspan fill="#128A4C">hired,</tspan> not</text>
+    <text x="130" y="82" font-size="62" font-weight="800" fill="#64748B" textLength="262" lengthAdjust="spacingAndGlyphs"><tspan fill="#128A4C">Hired,</tspan> not</text>
     <text x="412" y="82" font-size="62" font-weight="600" fill="#64748B" textLength="214" lengthAdjust="spacingAndGlyphs">applied</text>
     <line x1="408" y1="62" x2="630" y2="62" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
   </g>

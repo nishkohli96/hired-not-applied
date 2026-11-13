@@ -50,7 +50,7 @@ Then offer once to save the 50-word intro and the headline into `resume.md` unde
 
 ## Save it
 
-Write the result to `profile/recruiter-positioning.md` under the output root, following `../../references/output-files.md`: every version of the intro, summary, headline and keywords. Then show it in chat as usual and end with one line giving the path.
+Write the result to `profile/recruiter-positioning.md` under the output root, following `../../references/output-files.md`: every version of the intro, summary, headline and keywords. Then show it in chat as usual and give the path in one line only if it is the first file you save this session; later saves in the same session do not repeat it (see `../../references/output-files.md`).
 
 ## Rules
 

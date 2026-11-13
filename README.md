@@ -26,6 +26,20 @@ When a job is posted and worth your time, `job-decode` makes sure the applicatio
 
 Install one, two or all three; each plugin works on its own, and each includes `resume-setup` so it can stand alone.
 
+**Easiest: the Claude desktop app (no terminal, no coding)**
+
+1. **Download and sign in.** Get the Claude desktop app for Mac or Windows from [claude.ai/download](https://claude.ai/download), install it, open it and sign in with your Claude account.
+2. **Open the Plugins page.** In the app, go to **Settings > Customize > Plugins**.
+3. **Add this marketplace.** Select **Add > Add marketplace**, type `nishkohli96/hired-not-applied` and confirm. The three plugins now appear on the page.
+4. **Add the plugins.** Open **job-radar**, **job-decode** and **networking** in turn and select **Add** on each. Install all three, or only the ones you need.
+5. **Use them.** Start a new chat and say *"set up my resume"*, then paste or attach your resume. After that, type `/` in the message box to see the skills, or just describe what you want ("decode this job description", "write a cold email to the head of design at Acme").
+
+**No GitHub access, or you prefer a file?** Download the latest `hired-not-applied.zip` from the repo's `dist/` folder and unzip it. Then zip one plugin folder (for example `job-radar`) and use **Add > Upload plugin** to upload that zip. Repeat for each plugin; the upload accepts one plugin per zip.
+
+**Plans.** Anthropic lists plugins as a paid-plan feature (Pro, Max, Team or Enterprise) in the desktop app, and the docs don't say whether a Free account can add a marketplace or upload a plugin. If you don't see **Customize > Plugins**, or **Add** is missing, that is the reason; the plugins are free, the Claude plan that runs them is not. If your workspace is managed by an organization, an admin may need to allow plugins.
+
+Prefer a terminal? The Claude Code options are below.
+
 **Claude Code — one folder only (recommended)**
 
 A job search is its own project, so keep these plugins in its folder instead of loading them into every session you ever start. Make a folder for the search, then install at local scope:
@@ -66,7 +80,7 @@ claude --plugin-dir ./job-radar --plugin-dir ./job-decode --plugin-dir ./network
 
 Use this if you want to change the skills to suit yourself.
 
-**Claude app (desktop / web):** add this GitHub repo as a plugin marketplace, or zip the contents of `job-radar/`, `job-decode/` or `networking/` as `<name>.plugin` and upload it. The app has no per-folder scope; plugins you add there are on for your account.
+**Claude app (desktop / web):** see the steps at the top of this section. The app has no per-folder scope; plugins you add there are on for your account, and they also sync to Claude Code at the next session start.
 
 ### 2. Add your resume once
 
@@ -86,14 +100,14 @@ Skills look for it in this order: a resume pasted in the current chat → `$HIRE
 Everything a skill produces is written to a file in the folder you run Claude from, as well as shown in chat:
 
 ```
-applications/fnp-sde3-backend/   decode-jd.md, fit-check.md, cold-email.md, interview-answers.md, the tailored resume
+applications/CompanyName/        decode-jd-sde3-backend.md, cold-email-sde3-backend-priya-sharma.txt, the tailored resume…
 people/                          per-contact prep
 research/                        company, market and industry briefs
 outreach/                        your outreach log
 profile/                         positioning that isn't tied to one job
 ```
 
-One file per skill per job, with every variant inside it as a section, so three cold-email options sit side by side in one `cold-email.md` instead of three files. Set `HIRED_NOT_APPLIED_OUTPUT` to put them somewhere else; without a writable folder, you get the output in chat and as a download.
+One file per skill per job, with every variant inside it, so three cold-email options sit side by side in one file instead of three. Messages (cold emails, connection notes, InMails, referral asks, follow-ups) are saved as plain `.txt` with bare URLs, so you can copy and paste straight into Gmail or LinkedIn; reports and briefs are Markdown. Set `HIRED_NOT_APPLIED_OUTPUT` to put them somewhere else; without a writable folder, you get the output in chat and as a download.
 
 ### 4. Just ask
 
@@ -152,4 +166,4 @@ Every message `networking` writes follows a shared voice guide (assertive, polit
 
 ## Contributing
 
-Each skill is `skills/<name>/SKILL.md`, with longer material in `references/`. Plugins are `job-radar/`, `job-decode/` and `networking/`. Files used by all three plugins live in `shared/`; after editing them run `bash scripts/sync-shared.sh`. Bump `version` in the plugin's `plugin.json` and in `.claude-plugin/marketplace.json`. Licensed under [MIT](./LICENSE).
+Each skill is `skills/<name>/SKILL.md`, with longer material in `references/`. Plugins are `job-radar/`, `job-decode/` and `networking/`. Files used by all three plugins live in `shared/`; after editing them run `bash scripts/sync-shared.sh`. Bump `version` in the plugin's `plugin.json` and in `.claude-plugin/marketplace.json`, and add an entry to [CHANGELOG.md](./CHANGELOG.md). Licensed under [MIT](./LICENSE).

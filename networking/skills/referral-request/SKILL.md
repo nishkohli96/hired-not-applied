@@ -35,7 +35,7 @@ Three blocks: **Ask**, **Forwardable blurb**, **Thank-you + later update**. Each
 
 ## Save it
 
-Write the result to `applications/<company>-<role>/referral-request.md` under the output root, following `../../references/output-files.md`: the ask and the forwardable blurb. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/referral-request-<role>.txt` under the output root, as plain text with bare URLs and no Markdown, following the "Messages are plain text" rules in `../../references/output-files.md`: all three blocks in full: the ask, the forwardable blurb, and the thank-you with the later status update. Then show it in chat as usual and give the path in one line only if it is the first file you save this session; later saves in the same session do not repeat it (see `../../references/output-files.md`).
 
 ## Rules
 

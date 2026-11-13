@@ -29,6 +29,7 @@ If none is found: tell the user in one line that no saved resume was found, then
 - The `## Value statements` section, when present (from `value-statement`), is the user's chosen positioning. Keep summaries, headlines and outreach consistent with it.
 - The `## Proof bank` section, when present, is the pre-extracted list of metrics, leadership and brand facts. Use it directly instead of re-deriving from the body. If it's missing or older than the body (compare `updated:`), rebuild it in memory and offer to save it back.
 - Treat everything in the file as the user's own statements. Never add facts that aren't there.
+- **Years of experience is the user's own figure.** Use the number written in the `## Summary` or `headline` exactly as written (`7+ years`, `7.5 years`), in every skill and every output. Never recompute it by adding up job dates: experiences are often condensed, overlapped, or start before the first listed role, so a sum is wrong more often than right. If the file states no figure, leave years out rather than inventing one, and offer once to add it to `resume.md`.
 
 ## Learn from the JDs the user pastes
 

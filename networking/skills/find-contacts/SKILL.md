@@ -41,7 +41,7 @@ Then: recommended order and the channel for each. Offer to draft messages with `
 
 ## Save it
 
-Write the result to `applications/<company>-<role>/contacts.md` under the output root, following `../../references/output-files.md`: the contact map with the hooks. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/contacts-<role>.md` (`general` as the role when there is none) under the output root, following `../../references/output-files.md`: the contact map with the hooks. Then show it in chat as usual and give the path in one line only if it is the first file you save this session; later saves in the same session do not repeat it (see `../../references/output-files.md`).
 
 ## Rules
 

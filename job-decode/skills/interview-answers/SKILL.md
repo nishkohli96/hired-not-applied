@@ -55,7 +55,7 @@ Offer once to save it as a document for printing or phone reading, and to run th
 
 ## Save it
 
-Write the result to `applications/<company>-<role>/interview-answers.md` under the output root, following `../../references/output-files.md`: every question with its answer in full, plus the rehearsal list. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/interview-answers-<role>.md` under the output root, following `../../references/output-files.md`: every question with its answer in full, plus the rehearsal list. Then show it in chat as usual and give the path in one line only if it is the first file you save this session; later saves in the same session do not repeat it (see `../../references/output-files.md`).
 
 ## Rules
 

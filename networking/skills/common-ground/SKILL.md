@@ -49,7 +49,7 @@ One line: who they are relative to you, and the strongest bridge.
 
 ## Save it
 
-Write the result to `people/<person>-common-ground.md` under the output root, following `../../references/output-files.md`: the overlap and the openers. Then show it in chat as usual and end with one line giving the path.
+Write the result to `people/<person>-common-ground.md` under the output root, following `../../references/output-files.md`: the overlap and the openers. Then show it in chat as usual and give the path in one line only if it is the first file you save this session; later saves in the same session do not repeat it (see `../../references/output-files.md`).
 
 ## Rules
 
