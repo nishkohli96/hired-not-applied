@@ -31,7 +31,7 @@ Each message as a paste-ready block labelled with day and purpose. For sequences
 
 ## Save it
 
-Write the result to `applications/<Company>/follow-up-<role>.txt` under the output root, as plain text with bare URLs and no Markdown, following the "Messages are plain text" rules in `../../references/output-files.md`: the whole sequence with its dates; append later follow-ups to the same file. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/follow-up-<role>.txt` (`general` as the role when there is none) under the output root, as plain text with bare URLs and no Markdown, following the "Messages are plain text" rules in `../../references/output-files.md`: the whole sequence with its dates; append later follow-ups to the same file. Then show it in chat as usual and give the path in one line only if it is the first file you save this session; later saves in the same session do not repeat it (see `../../references/output-files.md`).
 
 ## Rules
 

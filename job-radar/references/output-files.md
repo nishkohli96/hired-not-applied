@@ -32,6 +32,8 @@ If no location can be written to (the Claude app with no file access), show the 
 
 **No company name?** Anonymous or confidential postings, and recruiter listings that hide the employer, have no company to name. Never guess or invent one. Use `applications/Unnamed_<source>/`, where `<source>` is the recruiter, agency or job board if the posting shows one (`Unnamed_Michael_Page`, `Unnamed_LinkedIn`), otherwise `applications/Unnamed/`. Tell the user the folder is a placeholder and offer to move the files once the employer is known.
 
+**No role?** When there is no target role (a general or informational contact search, a follow-up after a networking call, a note to someone at a company you are only exploring), use `general` as the role slug: `connection-note-general.txt`, `contacts-general.md`, `follow-up-general.txt`.
+
 **Role goes in the file name**, because one company can have several roles and each needs its own files side by side: `decode-jd-sde3-fullstack.md`, `cold-email-sde3-fullstack.md`. Use a short lowercase hyphenated slug of the title as written in the JD, and reuse the same slug for every skill on that role.
 
 **Cold emails to a named person add the contact:** `cold-email-<role>-<contact>.txt`, with the contact's name as a lowercase hyphenated slug (`cold-email-sde3-fullstack-priya-sharma.txt`). Emailing a hiring manager and a team lead for the same role gives two files, so neither overwrites the other. With no named person (a generic careers@ address, or a draft for a company only), use `cold-email-<role>.txt`.
@@ -42,7 +44,7 @@ If no location can be written to (the Claude app with no file access), show the 
 
 (Message files follow "Messages are plain text" below; the rest of this section applies to both.)
 
-Each skill writes **one** file per job or per person, and puts all of its variants in that file as sections. Three cold-email options for the same role and contact are three variant blocks in one `cold-email-<role>[-<contact>].txt` (or three `## Variant` sections in a Markdown file), never three files. The user compares them in one place and sends one.
+Each skill writes **one** file per job or per person, and puts all of its variants in that file as sections. Three cold-email options for the same role and contact are three variant blocks in one `cold-email-<role>[-<contact>].txt` (message files are always `.txt` blocks, never Markdown; only non-message files such as reports use `## Variant` sections), never three files. The user compares them in one place and sends one.
 
 Write the full text of each variant, exactly as shown in chat. A file that only summarises what was drafted is useless later.
 

@@ -52,7 +52,7 @@ Offer one next step: tailor the resume (`tailor-resume`), prep interviews (`inte
 
 ## Save it
 
-Write the result to `applications/<Company>/fit-check-<role>.md` under the output root, following `../../references/output-files.md`: the score, the evidence and the call. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/fit-check-<role>.md` under the output root, following `../../references/output-files.md`: the score, the evidence and the call. Then show it in chat as usual and give the path in one line only if it is the first file you save this session; later saves in the same session do not repeat it (see `../../references/output-files.md`).
 
 ## Rules
 
