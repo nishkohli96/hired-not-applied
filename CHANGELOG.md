@@ -7,6 +7,8 @@ job-radar 0.3.2 · job-decode 0.14.2 · networking 0.13.0
 
 ### Changed
 - **Messages are saved as plain `.txt`, not Markdown.** Cold emails, connection notes, InMails and DMs, referral asks, follow-ups and outreach packs have no `#`, `**` or `[text](url)` to clean up before pasting into Gmail or LinkedIn. Links are bare URLs so they turn clickable on paste. Reports, briefs and decodes stay Markdown.
+- Cold emails to a named person are saved as `cold-email-<role>-<contact>.txt`, so mailing a hiring manager and a team lead for the same role gives two files instead of one overwriting the other. No named person: `cold-email-<role>.txt`.
+- `tailor-resume` layout fixes: contact line under the name is email, phone, LinkedIn, GitHub, city with linked "LinkedIn"/"GitHub" words; the summary is neutral and pronoun-free, 3–5 lines, opening with the designation; only key metrics are bolded; the skills section keeps the user's categories, order and format; education and certifications use a fixed layout; improvement ideas go in chat as suggestions and never as `[X]%` placeholders in the resume.
 - Each variant is one block in the file, separated by a rule line, with the word or character count in the rule line so nothing but the message sits inside it. A cold email's `Subject:` is the first line of its block.
 
 ## [0.22.1] - 2026-11-13

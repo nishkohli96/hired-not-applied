@@ -39,7 +39,7 @@ Each variant as a ready-to-paste block with subject, body and word count. If an 
 
 ## Save it
 
-Write the result to `applications/<Company>/cold-email-<role>.txt` under the output root, as plain text with bare URLs and no Markdown, following the "Messages are plain text" rules in `../../references/output-files.md`: every subject line and body in full, one variant block each. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/cold-email-<role>-<contact>.txt` under the output root when the email goes to a named person at that company (contact name as a lowercase hyphenated slug), or `cold-email-<role>.txt` when there is no named person, as plain text with bare URLs and no Markdown, following the "Messages are plain text" rules in `../../references/output-files.md`: every subject line and body in full, one variant block each. Then show it in chat as usual and end with one line giving the path.
 
 ## Rules
 

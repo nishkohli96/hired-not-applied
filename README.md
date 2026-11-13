@@ -86,7 +86,7 @@ Skills look for it in this order: a resume pasted in the current chat → `$HIRE
 Everything a skill produces is written to a file in the folder you run Claude from, as well as shown in chat:
 
 ```
-applications/CompanyName/        decode-jd-sde3-backend.md, cold-email-sde3-backend.txt, the tailored resume…
+applications/CompanyName/        decode-jd-sde3-backend.md, cold-email-sde3-backend-priya-sharma.txt, the tailored resume…
 people/                          per-contact prep
 research/                        company, market and industry briefs
 outreach/                        your outreach log
