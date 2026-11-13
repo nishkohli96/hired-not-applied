@@ -43,7 +43,7 @@ Then one line: what to send once they accept (pointer to `linkedin-message`, "af
 
 ## Save it
 
-Write the result to `applications/<company>-<role>/connection-note.md` under the output root, following `../../references/output-files.md`: each note in full with its character count. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/connection-note-<role>.txt` under the output root, as plain text with bare URLs and no Markdown, following the "Messages are plain text" rules in `../../references/output-files.md`: each note in full with its character count. Then show it in chat as usual and end with one line giving the path.
 
 ## Rules
 

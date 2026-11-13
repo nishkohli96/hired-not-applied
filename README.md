@@ -86,14 +86,14 @@ Skills look for it in this order: a resume pasted in the current chat → `$HIRE
 Everything a skill produces is written to a file in the folder you run Claude from, as well as shown in chat:
 
 ```
-applications/fnp-sde3-backend/   decode-jd.md, fit-check.md, cold-email.md, interview-answers.md, the tailored resume
+applications/CompanyName/        decode-jd-sde3-backend.md, cold-email-sde3-backend.txt, the tailored resume…
 people/                          per-contact prep
 research/                        company, market and industry briefs
 outreach/                        your outreach log
 profile/                         positioning that isn't tied to one job
 ```
 
-One file per skill per job, with every variant inside it as a section, so three cold-email options sit side by side in one `cold-email.md` instead of three files. Set `HIRED_NOT_APPLIED_OUTPUT` to put them somewhere else; without a writable folder, you get the output in chat and as a download.
+One file per skill per job, with every variant inside it, so three cold-email options sit side by side in one file instead of three. Messages (cold emails, connection notes, InMails, referral asks, follow-ups) are saved as plain `.txt` with bare URLs, so you can copy and paste straight into Gmail or LinkedIn; reports and briefs are Markdown. Set `HIRED_NOT_APPLIED_OUTPUT` to put them somewhere else; without a writable folder, you get the output in chat and as a download.
 
 ### 4. Just ask
 
@@ -152,4 +152,4 @@ Every message `networking` writes follows a shared voice guide (assertive, polit
 
 ## Contributing
 
-Each skill is `skills/<name>/SKILL.md`, with longer material in `references/`. Plugins are `job-radar/`, `job-decode/` and `networking/`. Files used by all three plugins live in `shared/`; after editing them run `bash scripts/sync-shared.sh`. Bump `version` in the plugin's `plugin.json` and in `.claude-plugin/marketplace.json`. Licensed under [MIT](./LICENSE).
+Each skill is `skills/<name>/SKILL.md`, with longer material in `references/`. Plugins are `job-radar/`, `job-decode/` and `networking/`. Files used by all three plugins live in `shared/`; after editing them run `bash scripts/sync-shared.sh`. Bump `version` in the plugin's `plugin.json` and in `.claude-plugin/marketplace.json`, and add an entry to [CHANGELOG.md](./CHANGELOG.md). Licensed under [MIT](./LICENSE).

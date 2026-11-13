@@ -49,7 +49,7 @@ Reply in chat, concise:
 
 ## Save it
 
-Write the result to `applications/<company>-<role>/resume-alignment.md` under the output root, following `../../references/output-files.md`: the matches, keywords and action plan. Then show it in chat as usual and end with one line giving the path.
+Write the result to `applications/<Company>/resume-alignment-<role>.md` under the output root, following `../../references/output-files.md`: the matches, keywords and action plan. Then show it in chat as usual and end with one line giving the path.
 
 ## Rules
 

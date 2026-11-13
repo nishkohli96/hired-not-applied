@@ -21,22 +21,59 @@ If no location can be written to (the Claude app with no file access), show the 
 
 ```
 <output root>/
-  applications/<company>-<role>/   one folder per job applied for
+  applications/<Company>/          one folder per company applied to
   people/                          per-contact prep
   research/                        companies, market and industry work
   outreach/                        the outreach log
   profile/                         positioning that isn't job-specific
 ```
 
-`<company>-<role>` is lowercase with hyphens, short enough to read in a file list: `fnp-sde3-backend`, `payoneer-senior-engineer`. Reuse the existing folder for a job the user already has one for, rather than making a near-duplicate.
+**The folder is the company name and nothing else**: `applications/Innovaccer/`, `applications/FNP/`, `applications/Reel_Security/`. Write it the way the company writes its own name, keep its capitalisation, drop legal suffixes (Inc, Ltd, Pvt, LLC), and join multiple words with underscores. Never put the role in the folder name. If a folder for that company already exists, use it, and never make a near-duplicate (`Innovaccer` and `innovaccer-sde3`).
+
+**Role goes in the file name**, because one company can have several roles and each needs its own files side by side: `decode-jd-sde3-fullstack.md`, `cold-email-sde3-fullstack.md`. Use a short lowercase hyphenated slug of the title as written in the JD, and reuse the same slug for every skill on that role.
+
+**Exception: the tailored resume** is named for the person who will receive it, in the form `<Name>_<Title>_<Company>.<ext>` with no `_Resume` suffix and words inside each part joined by underscores: `Nishant_Kohli_Senior_Software_Engineer_Innovaccer.docx`.
 
 ## One file per skill, every variant inside it
 
-Each skill writes **one** file per job or per person, and puts all of its variants in that file as sections. Three cold-email options for the same role are three `## Variant` sections in `cold-email.md`, never three files. The user compares them in one place and sends one.
+(Message files follow "Messages are plain text" below; the rest of this section applies to both.)
+
+Each skill writes **one** file per job or per person, and puts all of its variants in that file as sections. Three cold-email options for the same role are three variant blocks in one `cold-email-<role>.txt` (or three `## Variant` sections in a Markdown file), never three files. The user compares them in one place and sends one.
 
 Write the full text of each variant, exactly as shown in chat. A file that only summarises what was drafted is useless later.
 
-## File shape
+## Messages are plain text, everything else is Markdown
+
+Anything the user will copy and paste into another app - a cold email, a connection note, an InMail or DM, a referral ask, a follow-up, an outreach pack - is saved as **`.txt`**, not `.md`. Pasting from Markdown into Gmail or LinkedIn carries stray `#`, `**` and `[text](url)` with it.
+
+Rules for a message file:
+- **No Markdown anywhere**: no `#` headings, no `**bold**`, no bullet markers other than a plain hyphen the user would actually send, no tables, no code fences.
+- **No front matter.** Put one plain header line instead, outside the paste area.
+- **Links are bare URLs** (`https://github.com/nishkohli96`), never `[text](url)`, so Gmail and LinkedIn make them clickable on paste.
+- **Each variant is one block**, with every variant for that job in the same file, separated by a rule line. Everything between two rule lines is exactly what gets pasted; nothing else goes inside it. Put the word or character count in the rule line, not in the body.
+- For email, `Subject:` is the first line of the block, then a blank line, then the body.
+- Leave a real blank line between paragraphs. Don't hard-wrap lines.
+
+```
+Cold email | FNP | SDE-3 Backend | to Priya Sharma, Engineering Manager | 2026-11-13
+
+========== VARIANT A: short, metrics first (92 words) ==========
+Subject: SDE-3 Backend - 25 Node.js APIs for SonyLiv, 200-500ms faster
+
+Hi Priya,
+
+...
+
+Best,
+Nishant
+
+========== VARIANT B: longer, problem-led (148 words) ==========
+Subject: ...
+```
+
+Later sessions append a new block under a rule line carrying the date (`========== 2026-11-20: rewrite after no reply ==========`). Reports, briefs, decodes and research stay `.md` with front matter.
+
+## File shape (Markdown files)
 
 ```markdown
 ---
