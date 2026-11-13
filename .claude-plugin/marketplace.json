@@ -1,0 +1,59 @@
+{
+  "name": "hired-not-applied",
+  "owner": {
+    "name": "Nishant Kohli",
+    "url": "https://github.com/nishkohli96"
+  },
+  "metadata": {
+    "description": "Hired, not applied: Claude plugins that get job seekers in any field past the careers portal. Find where to apply from live hiring signals, decode the job and tailor your resume, and reach HR, hiring managers and employees for interviews and referrals.",
+    "version": "0.22.0"
+  },
+  "plugins": [
+    {
+      "name": "job-radar",
+      "source": "./job-radar",
+      "description": "Find where to apply before the jobs are advertised: companies most likely to hire you now from live hiring signals, remote employers that can hire from your country, one-company hiring deep dives, a weekly industry briefing and realistic pay benchmarks.",
+      "version": "0.3.0",
+      "category": "productivity",
+      "keywords": [
+        "job search",
+        "hiring signals",
+        "remote jobs",
+        "company research",
+        "salary benchmark",
+        "career"
+      ]
+    },
+    {
+      "name": "job-decode",
+      "source": "./job-decode",
+      "description": "You have the job description: decode what the employer really wants, score your fit, align or tailor your resume, get the likely interview questions with model answers, and prepare for the interview.",
+      "version": "0.14.0",
+      "category": "productivity",
+      "keywords": [
+        "job description",
+        "resume",
+        "ats",
+        "fit score",
+        "interview prep",
+        "cover letter"
+      ]
+    },
+    {
+      "name": "networking",
+      "source": "./networking",
+      "description": "Turn a resume, a JD and a contact's name into a full outreach pack for HR, hiring managers and referrers: LinkedIn notes, InMails, cold emails, referral asks and dated follow-ups in an assertive, polite, metrics-backed voice.",
+      "version": "0.12.0",
+      "category": "productivity",
+      "keywords": [
+        "networking",
+        "linkedin",
+        "cold email",
+        "inmail",
+        "referral",
+        "follow up",
+        "job search"
+      ]
+    }
+  ]
+}

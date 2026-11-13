@@ -1,0 +1,21 @@
+{
+  "name": "networking",
+  "version": "0.12.0",
+  "description": "Networking for job seekers in any field: find the right contacts and write LinkedIn connection notes, InMails, cold emails, referral asks and follow-up sequences that get replies.",
+  "author": {
+    "name": "Nishant Kohli",
+    "url": "https://github.com/nishkohli96"
+  },
+  "keywords": [
+    "networking",
+    "linkedin",
+    "cold email",
+    "inmail",
+    "referral",
+    "follow up",
+    "job search",
+    "ai job search"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/nishkohli96/hired-not-applied"
+}

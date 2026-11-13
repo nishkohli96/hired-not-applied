@@ -1,0 +1,19 @@
+{
+  "name": "job-radar",
+  "version": "0.3.0",
+  "description": "Find where to apply before the jobs are advertised: rank the companies most likely to hire you now from live hiring signals, find remote employers that can hire from your country, go deep on one company's hiring probability, track your industry weekly, and benchmark what a role really pays.",
+  "author": {
+    "name": "Nishant Kohli",
+    "url": "https://github.com/nishkohli96"
+  },
+  "keywords": [
+    "job search",
+    "hiring signals",
+    "remote jobs",
+    "company research",
+    "salary benchmark",
+    "career"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/nishkohli96/hired-not-applied"
+}

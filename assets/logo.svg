@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120" viewBox="0 0 640 120" role="img" aria-label="hired, not applied">
+  <title>hired, not applied</title>
+  <defs>
+    <linearGradient id="hnaBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(8 9) scale(0.2)">
+    <rect width="512" height="512" rx="112" fill="url(#hnaBg)"/>
+    <g transform="translate(0 -28)">
+      <g fill="#FFFFFF">
+        <circle cx="128" cy="178" r="52"/>
+        <path d="M40 416 C40 304 74 246 128 246 C168 246 194 266 206 292 L196 416 Z"/>
+        <circle cx="384" cy="178" r="52"/>
+        <path d="M472 416 C472 304 438 246 384 246 C344 246 318 266 306 292 L316 416 Z"/>
+      </g>
+      <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+        <path d="M178 296 L236 336" stroke-width="54"/>
+        <path d="M334 296 L276 336" stroke-width="54"/>
+      </g>
+      <ellipse cx="256" cy="338" rx="50" ry="32" fill="#FFFFFF"/>
+      <path d="M236 316 Q256 336 276 360" fill="none" stroke="#3E6FE6" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="394" cy="420" r="44" fill="#22C55E"/>
+      <path d="M374 421 l14 14 l26 -28" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="130" y="82" font-size="62" font-weight="800" fill="#64748B" textLength="262" lengthAdjust="spacingAndGlyphs"><tspan fill="#128A4C">hired,</tspan> not</text>
+    <text x="412" y="82" font-size="62" font-weight="600" fill="#64748B" textLength="214" lengthAdjust="spacingAndGlyphs">applied</text>
+    <line x1="408" y1="62" x2="630" y2="62" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
